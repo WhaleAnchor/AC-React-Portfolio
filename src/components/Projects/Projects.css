@@ -1,0 +1,23 @@
+/* src/components/Projects.css */
+.projects {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #1e1e1e;
+    padding: 2rem;
+  }
+  
+  .projects h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projects h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  

@@ -1,0 +1,49 @@
+/* src/components/Contact.css */
+.contact {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #1e1e1e;
+    padding: 2rem;
+  }
+  
+  .contact h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact label {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact input,
+  .contact textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #00ff00;
+    background-color: #1e1e1e;
+    border: 2px solid #00ff00;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    color: #00ff00;
+    background-color: #1e1e1e;
+    border: 2px solid #00ff00;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #00ff00;
+    color: #1e1e1e;
+  }
+  
