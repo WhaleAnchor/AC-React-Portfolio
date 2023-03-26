@@ -1,50 +1,120 @@
 // src/components/Navbar.js
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { FaHome } from 'react-icons/fa';
 
 const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  padding: 15px 30px;
-  background-color: rgba(34, 40, 49, 0.9);
-  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 100;
 `;
 
-const NavLink = styled(Link)`
+
+const NavItem = styled(Link)`
   color: #eeeeee;
-  margin-left: 30px;
-  font-size: 1.1rem;
   text-decoration: none;
+  margin-left: 30px;
   cursor: pointer;
+  transition: color 0.3s;
+  font-size: 30px;
 
   &:hover {
     color: #00adb5;
   }
 `;
 
+const PhaserBeam = styled.div`
+  position: fixed;
+  top: ${props => `${props.navbarHeight}px`};
+  left: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 173, 181, 0) 0%,
+    rgba(0, 173, 181, 0.5) ${(props) => props.width - 7.5}%,
+    #00adb5 ${(props) => props.width}%,
+    rgba(0, 173, 181, 0.5) ${(props) => props.width + 7.5}%,
+    rgba(0, 173, 181, 0) 100%
+  );
+  z-index: 101;
+  width: ${props => `${props.width}%`};
+`;
+
+
+
 const Navbar = () => {
+  const [phaserWidth, setPhaserWidth] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = document.documentElement.clientHeight;
+      const scrollPosition = window.scrollY;
+      const scrollPercentage = (scrollPosition / (scrollHeight - clientHeight)) * 100;
+    
+      setPhaserWidth(scrollPercentage);
+    };
+    
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <NavbarContainer>
-      <NavLink to="home" smooth={true} duration={1000}>
-        <FaHome />
-      </NavLink>
-      <NavLink to="about" smooth={true} duration={1000}>
-        About
-      </NavLink>
-      <NavLink to="projects" smooth={true} duration={1000}>
-        Projects
-      </NavLink>
-      <NavLink to="contact" smooth={true} duration={1000}>
-        Contact
-      </NavLink>
-    </NavbarContainer>
+    <>
+      <PhaserBeam width={phaserWidth} navbarHeight={60} />
+      <NavbarContainer>
+        <NavItem
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <FaHome />
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          About
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Projects
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Contact
+        </NavItem>
+      </NavbarContainer>
+    </>
   );
 };
 
