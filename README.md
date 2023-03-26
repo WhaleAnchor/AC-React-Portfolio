@@ -27,18 +27,20 @@
 <li><a href="#about-me">About Me</a></li>
 <li><a href="#work-experience">Work Experience</a></li>
 <li><a href="#certifications">Certifications</a></li>
-<li><a href="#skills-&-interests">Skills & Interests</a></li>
+<li><a href="#skills-and-interests">Skills And Interests</a></li>
 <li><a href="#getting-started">Getting Started</a></li>
-<li><a href="#license">License</a></li>
-<li><a href="#contact">Contact</a></li>
 
-This is the source code for my personal portfolio website. It showcases my work as a Full Stack Web Developer and my background in other fields.
-The website is deployed using Render.[Andrew Choi's Portfolio](https://andrew-chois-portfolio.onrender.com/).
-![Andrew-Choi](assets/screenshot.png "Image of Portfolio's Intro Page") 
-![Andrew-Choi](assets/screenshot1.png "Image of Portfolio's Projects Page") 
 ## About Me
 
 My name is Andrew Choi, and I am a Full Stack Web Developer, Language Interpreter, Translator, Events Director, Media Team Lead, and Music Instructor.
+
+This is the source code for my personal portfolio website. 
+It showcases my work as a Full Stack Web Developer and my background in other fields.
+
+Here is a link to the deployed page: <a href="https://github.com/WhaleAnchor/AC-React-Portfolio">Andrew Choi's Portfolio</a>
+
+![Andrew-Choi](assets/screenshot.png "Image of Portfolio's Intro Page") 
+![Andrew-Choi](assets/screenshot1.png "Image of Portfolio's Projects Page") 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -66,7 +68,7 @@ My name is Andrew Choi, and I am a Full Stack Web Developer, Language Interprete
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Skills & Interests
+### Skills And Interests
 
 - Technical Skills: HTML, CSS, SQL, NoSQL, JavaScript, MongoDB, Express, React, Node, Adobe Photoshop, Adobe Premiere Pro, Ableton Live
 - Interests: Climbing, playing musical instruments, traveling, making art for fun or for assets in game development hobby
