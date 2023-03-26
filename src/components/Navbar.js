@@ -10,34 +10,41 @@ const NavbarContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
   background-color: #222831;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
   z-index: 100;
-`;
 
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+`;
 
 const NavItem = styled(Link)`
   color: #eeeeee;
   text-decoration: none;
   margin-left: 30px;
   cursor: pointer;
-  transition: color 0.3s;
   font-size: 30px;
 
   &:hover {
     color: #00adb5;
   }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-left: 20px;
+  }
 `;
+
 
 const PhaserBeam = styled.div`
   position: fixed;
   top: ${props => `${props.navbarHeight}px`};
   left: 0;
-  height: 3px;
+  height: 2.5px;
   background: linear-gradient(
     90deg,
     rgba(0, 173, 181, 0) 0%,
@@ -75,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-      <PhaserBeam width={phaserWidth} navbarHeight={60} />
+      <PhaserBeam width={phaserWidth} navbarHeight={85} />
       <NavbarContainer>
         <NavItem
           activeClass="active"

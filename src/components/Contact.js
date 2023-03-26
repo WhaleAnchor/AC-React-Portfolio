@@ -9,6 +9,8 @@ const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #37414f;
+  color: #eeeeee;
 `;
 
 const Title = styled.h1`

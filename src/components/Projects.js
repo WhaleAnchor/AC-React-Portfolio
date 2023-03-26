@@ -9,6 +9,8 @@ const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #222831;
+  color: #eeeeee;
 `;
 
 const Title = styled.h1`
