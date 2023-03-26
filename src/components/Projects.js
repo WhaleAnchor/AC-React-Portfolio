@@ -69,6 +69,7 @@ const ProjectCard = styled.div`
   padding: 40px;
   width: 80%;
   margin: 0 auto;
+  box-shadow: rgba(10, 5, 20, 5) 0px 0px 11px;
 
   @media (max-width: 768px) {
     width: 90%;

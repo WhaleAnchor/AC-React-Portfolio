@@ -36,16 +36,21 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   align-items:center;
+  justify-content:center;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 `;
 
 const ImageWrapper = styled.div`
   flex: 0 0 250px;
-  margin-right: 20px;
+  margin: 15px;
+  border: 3px solid white;
+  padding:8px;
+  border-radius: 15px;
+  background-color:rgb(55,65,79,1);
 
   @media (max-width: 768px) {
     margin-bottom: 20px;
