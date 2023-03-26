@@ -11,6 +11,8 @@ import employeeTracker from "../assets/employeeTracker.png"
 import weatherDashboard from "../assets/weatherDashboard.png"
 import textEditor from "../assets/textEditor.png"
 import teamProfileMaker from "../assets/teamProfileMaker.png"
+import boxChoi from "../assets/boxchoi.png"
+import codingQuiz from "../assets/codingquiz.png"
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -169,36 +171,49 @@ const ProjectLink = styled.a`
 
 const Projects = () => {
   const projects = [
+
     {
-        title: 'Tech Blog',
-        image: `${techBlog}`,
-        description: 'The Tech Blog website is a place where users can come and talk about any topics they like!',
-        link: 'https://github.com/WhaleAnchor/Tech-Blog',
-      },
-      {
-        title: 'Employee Tracker',
-        image: `${employeeTracker}`,
-        description: 'A command line application that allows user to interface with a sql database to manage their employees.',
-        link: 'https://github.com/WhaleAnchor/Employee_Tracker',
-      },
-      {
-        title: 'Weather Dashboard',
-        image: `${weatherDashboard}`,
-        description: 'A website that allows users to bring up the weather for the day and for the next five days for the city of their choice!',
-        link: 'https://github.com/WhaleAnchor/weather-dashboard',
-      },
-      {
-        title: 'Text Editor',
-        image: `${textEditor}`,
-        description: 'The J.A.T.E. Text Editor is a Progressive Web Application that runs in the browser.',
-        link: 'https://github.com/WhaleAnchor/Text-Editor',
-      },
-      {
-        title: 'Team Profile Maker',
-        image: `${teamProfileMaker}`,
-        description: 'A command line application that generates a page of employee information with user inputted data.',
-        link: 'https://github.com/WhaleAnchor/Team-Profile-Maker',
-      },
+      title: 'Weather Dashboard',
+      image: `${weatherDashboard}`,
+      description: 'A fun website that allows users to bring up the weather for the day and for the next five days for the city of their choice!',
+      link: 'https://github.com/WhaleAnchor/weather-dashboard',
+    },
+    {
+      title: 'Box Choi',
+      image: `${boxChoi}`,
+      description: 'An inventory app made with React/Firebase and hosted on Render. Custom-made for the inventory management of a local-business.',
+      link: 'https://github.com/WhaleAnchor/Box-Choi',
+    },
+    {
+      title: 'Tech Blog',
+      image: `${techBlog}`,
+      description: 'The-Tech-Blog website is a place where users can come and talk about any topics they like!',
+      link: 'https://github.com/WhaleAnchor/Tech-Blog',
+    },
+    {
+      title: 'Employee Tracker',
+      image: `${employeeTracker}`,
+      description: 'A command line application (CLI) that allows user to interface with a sql database to manage their employees.',
+      link: 'https://github.com/WhaleAnchor/Employee_Tracker',
+    },
+    {
+      title: 'Text Editor',
+      image: `${textEditor}`,
+      description: 'The J.A.T.E. Text Editor is a Progressive Web Application that runs in the browser.',
+      link: 'https://github.com/WhaleAnchor/Text-Editor',
+    },
+    {
+      title: 'Team Profile Maker',
+      image: `${teamProfileMaker}`,
+      description: 'A command line application that generates a page of employee information with user inputted data.',
+      link: 'https://github.com/WhaleAnchor/Team-Profile-Maker',
+    },
+    {
+      title: 'Coding Quiz',
+      image: `${codingQuiz}`,
+      description: 'A web-based quiz where users can test their knowledge on basic coding principles. Features a timer and a highscore. Deployed on Github Pages.',
+      link: 'https://github.com/WhaleAnchor/Coding_Quiz_Challenge',
+    },
   ];
 
   return (
