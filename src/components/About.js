@@ -36,7 +36,6 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   align-items:center;
-  justify-content:center'
 
   @media (max-width: 768px) {
     flex-direction: column;
