@@ -82,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-      <PhaserBeam width={phaserWidth} navbarHeight={85} />
+      <PhaserBeam width={phaserWidth} navbarHeight={65} />
       <NavbarContainer>
         <NavItem
           activeClass="active"
