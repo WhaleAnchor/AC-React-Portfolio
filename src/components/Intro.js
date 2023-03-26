@@ -15,31 +15,48 @@ const IntroContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 48px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 50px;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const IconContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 const IconLink = styled.a`
-  color: ${props => props.textColor || '#000000'};
-  margin: 0 10px;
-  font-size: 1.5rem;
-  text-decoration: none;
+  color: ${props => props.textColor};
+  font-size: 36px;
   transition: color 0.3s;
 
   &:hover {
     color: #00adb5;
   }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
+
 
 const Intro = () => {
   return (
