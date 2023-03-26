@@ -57,6 +57,9 @@ const PhaserBeam = styled.div`
   );
   z-index: 101;
   width: ${props => `${props.width}%`};
+  @media (max-width: 768px) {
+    top: ${props => `45px`};
+  }
 `;
 
 
