@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Carousel as CarouselBase } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './Projects.css';
 
 //image imports
 import techBlog from "../assets/techBlog.png"
@@ -18,9 +19,13 @@ const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 20px;
   background-color: #222831;
   color: #eeeeee;
+`;
+
+const CarouselWrapper = styled.div`
+  position: relative;
+  width: 90%;
 `;
 
 const StyledCarousel = styled(CarouselBase)`
@@ -28,6 +33,23 @@ const StyledCarousel = styled(CarouselBase)`
 
   .carousel .slide {
     background-color: transparent;
+  }
+
+  .control-arrow {
+    font-size: inherit !important;
+  }
+
+  .control-dots .dot {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+  }
+
+  .control-dots .dot:hover,
+  .control-dots .dot:focus,
+  .control-dots .dot.selected {
+    background-color: #00adb5 !important;
+    box-shadow: 0 0 1px 2.5px #00adb5 !important;
   }
 `;
 
@@ -48,6 +70,60 @@ const ProjectCard = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
+  }
+`;
+
+const ArrowPrev = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.8;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #eeeeee;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+const ArrowNext = styled.button`
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.8;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #eeeeee;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `;
 
@@ -128,21 +204,34 @@ const Projects = () => {
   return (
     <ProjectsContainer>
       <Title>Projects</Title>
-      <StyledCarousel showThumbs={false} infiniteLoop={true} interval={5000} autoPlay={true}>
-        {projects.map((project) => (
-          <ProjectCard key={project.title}>
-            <ProjectImage src={project.image} alt={project.title} />
-            <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectDescription>{project.description}</ProjectDescription>
-            <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
-              Check out my project!
-            </ProjectLink>
-          </ProjectCard>
-        ))}
-      </StyledCarousel>
+        <CarouselWrapper>
+          <StyledCarousel
+            showThumbs={false}
+            infiniteLoop={true}
+            interval={5000}
+            autoPlay={true}
+            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              hasPrev && <ArrowPrev type="button" onClick={onClickHandler} title={label} />
+            }
+            renderArrowNext={(onClickHandler, hasNext, label) =>
+              hasNext && <ArrowNext type="button" onClick={onClickHandler} title={label} />
+            }
+          >
+          {projects.map((project) => (
+            <ProjectCard key={project.title}>
+              <ProjectImage src={project.image} alt={project.title} />
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
+              <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
+                Check out my project!
+              </ProjectLink>
+            </ProjectCard>
+          ))}
+        </StyledCarousel>
+      </CarouselWrapper>
+
     </ProjectsContainer>
   );
-  
 };
 
 export default Projects;
