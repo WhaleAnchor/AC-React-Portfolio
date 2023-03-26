@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+<div id="top"></div>
+[![Contributors][contributors-shield]][contributors-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![MIT License][license-shield]][license-url]
 
-## Available Scripts
+[![React][react-shield]][react-url]
 
-In the project directory, you can run:
+<div>
+<h2 align="center">Andrew Choi's Portfolio</h2>
+<p align="center">
+    A Portfolio made with React and deployed to Render
+    <br />
+    <a href="https://github.com/WhaleAnchor/AC-React-Portfolio"><strong> Go to the GitHub Repository »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/WhaleAnchor/AC-React-Portfolio">Deployed on Render</a>
+    ·
+    <a href="https://github.com/WhaleAnchor/AC-React-Portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/WhaleAnchor/AC-React-Portfolio/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<li><a href="#about-me">About Me</a></li>
+<li><a href="#work-experience">Work Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#skills-&-interests">Skills & Interests</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#contact">Contact</a></li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is the source code for my personal portfolio website. It showcases my work as a Full Stack Web Developer and my background in other fields.
+The website is deployed using Render.[Andrew Choi's Portfolio](https://andrew-chois-portfolio.onrender.com/).
 
-### `npm test`
+## About Me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My name is Andrew Choi, and I am a Full Stack Web Developer, Language Interpreter, Translator, Events Director, Media Team Lead, and Music Instructor.
 
-### `npm run build`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Education
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Cypress College | Cypress, CA: Aug. 2012 – May 2016 (Psychology and Sociology)
+- Biola University | La Mirada, CA: Aug. 2018 – March 2020 (Bachelors of Arts, Sociology | Bible Minor - Incomplete)
+- UCI Coding Bootcamp | Irvine, CA: Jun. 2022 – Dec 2022 (Full-Stack Web Development)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run eject`
+### Work Experience
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Freelance | Fullerton, CA: Oct. 2011 – Present (Web Development | Language Interpreter and Translator)
+- International Mailbox | Fullerton, CA: Feb. 2012 – Present (Manager | Notary Public | Live Scan Fingerprint Operator)
+- Evergreen Hills Presbyterian Church | Gardena, CA: Apr. 2015 – Present (Events Director | Media Team Lead | Music Instructor)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Certifications
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- UCI Coding Bootcamp Certificate (June 2022 - Dec. 2022) – Full stack Web Development 6-month Bootcamp at UCI
+- California Notary Public – Legal notarization services for various documents
+- Certifix Live Scan Operator – Conducted DOJ and FBI background checks for live scan applicants
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Skills & Interests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Technical Skills: HTML, CSS, SQL, NoSQL, JavaScript, MongoDB, Express, React, Node, Adobe Photoshop, Adobe Premiere Pro, Ableton Live
+- Interests: Climbing, playing musical instruments, traveling, making art for fun or for assets in game development hobby
 
-### Code Splitting
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started
 
-### Analyzing the Bundle Size
+To run the project locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repo.
+    ```sh
+    git clone git@github.com:WhaleAnchor/AC-React-Portfolio.git
+    ```
+2. Download the dependencies.
+   ```sh
+    npm i
+   ```
+3. Run the development server.
+    ```sh
+    npm run start
+    ```
 
-### Making a Progressive Web App
+The website should now be running at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The website is deployed using Render. To deploy your own version, follow the [Render deployment guide](https://render.com/docs/deploy-create-react-app).
 
-### Deployment
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Acknowledgments
+
+- Thank you to all the instructors and mentors at UCI Coding Bootcamp for providing an excellent learning experience.
+- Special thanks to friends, family, and colleagues who have supported and inspired me throughout my journey.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- Markdown links -->
+[contributors-shield]:https://img.shields.io/github/contributors/WhaleAnchor/Tech-Blog.svg?style=for-the-badge
+[contributors-url]:https://github.com/WhaleAnchor/Tech-Blog/graphs/contributors
+
+[license-shield]:https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]:https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+
+[react-shield]:https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]:https://react.dev/reference/react
