@@ -33,7 +33,8 @@
 
 This is the source code for my personal portfolio website. It showcases my work as a Full Stack Web Developer and my background in other fields.
 The website is deployed using Render.[Andrew Choi's Portfolio](https://andrew-chois-portfolio.onrender.com/).
-
+![Andrew-Choi](assets/screenshot.png "Image of Portfolio's Intro Page") 
+![Andrew-Choi](assets/screenshot1.png "Image of Portfolio's Projects Page") 
 ## About Me
 
 My name is Andrew Choi, and I am a Full Stack Web Developer, Language Interpreter, Translator, Events Director, Media Team Lead, and Music Instructor.
