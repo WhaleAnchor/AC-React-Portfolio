@@ -23,6 +23,8 @@ const NavbarContainer = styled.div`
 `;
 
 const NavItem = styled(Link)`
+  display:flex;
+  align-items:center;
   color: #eeeeee;
   text-decoration: none;
   margin-left: 30px;

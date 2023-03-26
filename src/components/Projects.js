@@ -4,7 +4,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Carousel as CarouselBase } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './Projects.css';
 
 //image imports
 import techBlog from "../assets/techBlog.png"
@@ -19,7 +18,8 @@ const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #222831;
+  background: rgb(34,40,49);
+  background: linear-gradient(180deg, rgba(34,40,49,1) 95%, rgba(55,65,79,1) 100%);
   color: #eeeeee;
 `;
 

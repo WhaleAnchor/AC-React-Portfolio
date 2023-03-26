@@ -11,7 +11,7 @@ const IntroContainer = styled.div`
     justify-content: center;
     height: 100vh;
     background: rgb(34,40,49);
-    background: linear-gradient(180deg, rgba(34,40,49,1) 99%, rgba(55,65,79,1) 100%);
+    background: linear-gradient(180deg, rgba(34,40,49,1) 90%, rgba(55,65,79,1) 100%);
     color: #eeeeee;
 `;
 

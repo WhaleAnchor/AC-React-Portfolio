@@ -9,7 +9,8 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #37414f;
+  background-color: rgb(55,65,79,1);
+  background: linear-gradient(180deg, rgba(55,65,79,1) 90%, rgba(34,40,49,1) 100%);
   color: #eeeeee;
   padding: 0 20px;
 
