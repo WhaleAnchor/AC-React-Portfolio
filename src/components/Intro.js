@@ -5,13 +5,14 @@ import styled from 'styled-components';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const IntroContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #222831;
-  color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(34,40,49);
+    background: linear-gradient(180deg, rgba(34,40,49,1) 99%, rgba(55,65,79,1) 100%);
+    color: #eeeeee;
 `;
 
 const Title = styled.h1`
