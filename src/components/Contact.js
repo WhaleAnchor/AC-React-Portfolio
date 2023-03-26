@@ -11,11 +11,6 @@ const ContactContainer = styled.div`
   background-color: #37414f;
   color: #eeeeee;
   padding: 0 20px;
-
-  @media (max-width: 768px) {
-    padding: 20px 0;
-    height: auto;
-  }
 `;
 
 const Title = styled.h1`
