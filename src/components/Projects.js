@@ -13,6 +13,7 @@ import textEditor from "../assets/textEditor.png"
 import teamProfileMaker from "../assets/teamProfileMaker.png"
 import boxChoi from "../assets/boxchoi.png"
 import codingQuiz from "../assets/codingquiz.png"
+import burpBud from "../assets/BurpBud"
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -172,7 +173,12 @@ const ProjectLink = styled.a`
 
 const Projects = () => {
   const projects = [
-
+    {
+      title: 'Box Choi',
+      image: `${boxChoi}`,
+      description: 'An inventory app made with React/Firebase and hosted on Render. Custom-made for the inventory management of a local-business.',
+      link: 'https://github.com/WhaleAnchor/Box-Choi',
+    },
     {
       title: 'Weather Dashboard',
       image: `${weatherDashboard}`,
@@ -180,10 +186,10 @@ const Projects = () => {
       link: 'https://github.com/WhaleAnchor/weather-dashboard',
     },
     {
-      title: 'Box Choi',
-      image: `${boxChoi}`,
-      description: 'An inventory app made with React/Firebase and hosted on Render. Custom-made for the inventory management of a local-business.',
-      link: 'https://github.com/WhaleAnchor/Box-Choi',
+      title: 'BurpBud',
+      image: `${burpBud}`,
+      description: 'An SPA I made for a gastroentologist using React and Firebase. Patients can log their symptoms and print out the data in excel.',
+      link: 'https://github.com/WhaleAnchor/BurpBud',
     },
     {
       title: 'Tech Blog',
