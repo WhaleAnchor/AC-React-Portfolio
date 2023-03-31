@@ -13,7 +13,7 @@ import textEditor from "../assets/textEditor.png"
 import teamProfileMaker from "../assets/teamProfileMaker.png"
 import boxChoi from "../assets/boxchoi.png"
 import codingQuiz from "../assets/codingquiz.png"
-import burpBud from "../assets/BurpBud"
+import burpBud from "../assets/BurpBud.png"
 
 const ProjectsContainer = styled.div`
   display: flex;
