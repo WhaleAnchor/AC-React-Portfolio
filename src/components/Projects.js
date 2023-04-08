@@ -24,6 +24,7 @@ const ProjectsContainer = styled.div`
   background: rgb(34,40,49);
   background: linear-gradient(180deg, rgba(34,40,49,1) 95%, rgba(55,65,79,1) 100%);
   color: #eeeeee;
+  padding:10px
 `;
 
 const CarouselWrapper = styled.div`
@@ -68,7 +69,7 @@ const ProjectCard = styled.div`
   background-color: #37414f;
   border-radius: 8px;
   padding: 40px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   box-shadow: rgba(10, 5, 20, 5) 0px 0px 11px;
 
