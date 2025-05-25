@@ -89,13 +89,12 @@ const About = () => {
         </ImageWrapper>
         <TextWrapper>
           <Paragraph>
-            Hello, I'm a full stack web developer specializing in the MERN stack. 
+            Hello, I'm senior at Wayne State University, pursuing a degree in Marketing - Digital Marketing and Analytics
             I'm also a musician, music instructor, and music producer. 
             My passion for creating extends beyond coding to audio engineering, video production and editing, photo editing, and graphic design using Photoshop and Illustrator. 
             I value collaboration and adjust my approach to align with project needs. 
             My technical skills combined with creative talents enable me to deliver unique solutions for diverse client needs. 
-            I'm eager to learn and take on new challenges. T
-            hank you for visiting my website.
+            I'm eager to learn and take on new challenges. Thank you for visiting my website.
           </Paragraph>
         </TextWrapper>
       </ContentWrapper>

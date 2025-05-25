@@ -63,7 +63,7 @@ const Intro = () => {
   return (
     <IntroContainer>
       <Title>Andrew S. Choi</Title>
-      <Subtitle>Full-Stack Web Developer</Subtitle>
+      <Subtitle>Digital Marketing and Analytics | Web Developer </Subtitle>
       <IconContainer>
         <IconLink
           href="https://github.com/WhaleAnchor"
