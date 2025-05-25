@@ -94,7 +94,7 @@ const About = () => {
             My passion for creating extends beyond coding to audio engineering, video production and editing, photo editing, and graphic design using Photoshop and Illustrator. 
             I value collaboration and adjust my approach to align with project needs. 
             My technical skills combined with creative talents enable me to deliver unique solutions for diverse client needs. 
-            I'm eager to learn and take on new challenges. Thank you for visiting my website.
+            I'm eager to learn and take on new challenges. 
           </Paragraph>
         </TextWrapper>
       </ContentWrapper>
