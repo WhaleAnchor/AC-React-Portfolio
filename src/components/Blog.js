@@ -81,10 +81,9 @@ const Paragraph = styled.p`
 
 const BlogPostsWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 32px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   justify-content: center;
   margin-top: 40px;
 `;
@@ -94,24 +93,22 @@ const BlogCard = styled.div`
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   padding: 24px 20px;
-  width: 48%;
+  width: 50%;
   max-width: 600px;
   min-width: 320px;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
-  margin: 1%;
+  margin: 0 auto;
 
   @media (max-width: 900px) {
     width: 90%;
     max-width: 100%;
-    margin: 0 0 32px 0;
   }
 
   @media (max-width: 768px) {
     width: 100%;
     min-width: 0;
-    margin: 0 0 32px 0;
   }
 `;
 
