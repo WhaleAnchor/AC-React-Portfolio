@@ -13,10 +13,16 @@ const BlogContainer = styled.div`
   background-color: rgb(55,65,79,1);
   background: linear-gradient(180deg, rgba(55,65,79,1) 90%, rgba(34,40,49,1) 100%);
   color: #eeeeee;
-  padding: 80px 20px 0 20px; /* Add top padding for navbar */
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px; /* Add left padding for image */
 
   @media (max-width: 768px) {
-    padding: 70px 10px 0 10px;
+    padding-top: 70px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
   }
 `;
 
