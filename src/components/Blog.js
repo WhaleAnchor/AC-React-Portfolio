@@ -2,7 +2,6 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import profilePicture from '../assets/profilepicture.jpg';
 
 const BlogContainer = styled.div`
   display: flex;
@@ -48,24 +47,6 @@ const ContentWrapper = styled.div`
     flex-direction: column;
     padding: 0 15px;
   }
-`;
-
-const ImageWrapper = styled.div`
-  flex: 0 0 250px;
-  margin: 15px;
-  border: 3px solid white;
-  padding:8px;
-  border-radius: 15px;
-  background-color:rgb(55,65,79,1);
-
-  @media (max-width: 768px) {
-    margin-bottom: 20px;
-  }
-`;
-
-const ProfileImage = styled.img`
-  max-width: 100%;
-  border-radius: 10px;
 `;
 
 const TextWrapper = styled.div`
@@ -140,13 +121,15 @@ const CardContent = styled.p`
 const Blog = () => {
   const blogPosts = [
     {
-      title: 'How I Got Started in Digital Marketing',
-      date: 'July 1, 2025',
-      content: `My journey into digital marketing began with a curiosity for how brands connect with audiences online. I started by learning SEO and social media strategies, then expanded into analytics and content creation. Each project taught me the importance of adaptability and creativity.`
+      title: 'My First Few Weeks at ThermoVerse',
+      date: 'June 22, 2025',
+      content: `I started my internship at Digital Summer Clinic with Ann Arbor SPARK on June 8 and I was placed with ThermoVerse, a tech start-up that works on innovative solutions for building energy efficiency.
+      My first few weeks have been a whirlwind of learning and adapting to the fast-paced environment. I was not used to the scrappy, bootstrapping style of working in a company. I think it will take a while to get used to this! 
+      On another note, I am very thankful to be working with Oliver, another intern at Digital Summer Clinic. He is a great person to work with and we have been collaborating on various projects. I can't wait to see where this goes!`
     },
     {
       title: 'Balancing Music and Tech: My Creative Workflow',
-      date: 'June 15, 2025',
+      date: 'June 29, 2025',
       content: `As a musician and developer, I find inspiration in both code and composition. My workflow involves setting clear goals, using digital tools for both music and marketing, and always making time for creative exploration.`
     },
     {
@@ -175,9 +158,6 @@ const Blog = () => {
     <BlogContainer>
       <Title>Blog</Title>
       <ContentWrapper>
-        <ImageWrapper>
-          <ProfileImage src={profilePicture} alt="Profile" />
-        </ImageWrapper>
         <TextWrapper>
           <Paragraph>
             Welcome to my blog! Here, I share my insights and experiences in digital marketing, web development, and my current internship at Digital Summer Clinic and ThermoVerse. 
