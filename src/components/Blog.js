@@ -137,9 +137,11 @@ const Blog = () => {
       I've been meaning to take the Google Analytics Test for Digital Summer Clinic! I took half of the test before I got a network error and lost my progress. I need to find time to retake it and complete the certification. :(`
     },
     {
-      title: 'Favorite Tools for Content Creation',
-      date: 'May 28, 2025',
-      content: `From Photoshop and Illustrator to DAWs and video editors, I rely on a suite of tools to bring ideas to life. I love experimenting with new software and sharing tips with others in the creative community.`
+      title: 'Mid Internship Reflections',
+      date: 'July 6, 2025',
+      content: `It's halfway into the internship and I feel like I have done far less than I expected. I feel regret for not being able to contribute more to the team and the projects, but I am trying to regain my focus for the final stretch of the internship. 
+      It feels quite discouraging to be met with unexpected obstacles! I won't let this get me down, though. I am determined to make the most of the remaining weeks and leave a positive impact on the team and the projects I am involved in!
+      I have been working on a few projects, including a marketing campaign for ThermoVerse as well as redesigning their website to improve user engagement.`
     }
   ];
 
