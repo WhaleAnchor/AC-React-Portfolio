@@ -92,6 +92,7 @@ const BlogPostsWrapper = styled.div`
   gap: 32px;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 48px;
 `;
 
 const BlogCard = styled.div`

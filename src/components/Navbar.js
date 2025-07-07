@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
 
 const NavbarContainer = styled.div`
@@ -84,6 +84,7 @@ const PhaserBeam = styled.div`
 const Navbar = () => {
   const [phaserWidth, setPhaserWidth] = useState(0);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -105,12 +106,26 @@ const Navbar = () => {
 
   const isBlogPage = location.pathname === '/blog';
 
+  // Helper to navigate home and scroll to section after navigation
+  const handleNavToSection = (section) => (e) => {
+    e.preventDefault();
+    if (isBlogPage) {
+      navigate('/', { replace: false });
+      setTimeout(() => {
+        const el = document.querySelector(`[name='${section}']`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // Wait for navigation
+    }
+  };
+
   return (
     <>
       <PhaserBeam width={phaserWidth} navbarHeight={65} />
       <NavbarContainer>
         {isBlogPage ? (
-          <RouterNavItem to="/">
+          <RouterNavItem to="/" onClick={handleNavToSection('home')}>
             <FaHome />
           </RouterNavItem>
         ) : (
@@ -125,7 +140,7 @@ const Navbar = () => {
           </NavItem>
         )}
         {isBlogPage ? (
-          <RouterNavItem to="/">About</RouterNavItem>
+          <RouterNavItem to="/" onClick={handleNavToSection('about')}>About</RouterNavItem>
         ) : (
           <NavItem
             activeClass="active"
@@ -143,7 +158,7 @@ const Navbar = () => {
           <RouterNavItem to="/blog">Blog</RouterNavItem>
         )}
         {isBlogPage ? (
-          <RouterNavItem to="/">Projects</RouterNavItem>
+          <RouterNavItem to="/" onClick={handleNavToSection('projects')}>Projects</RouterNavItem>
         ) : (
           <NavItem
             activeClass="active"
@@ -156,7 +171,7 @@ const Navbar = () => {
           </NavItem>
         )}
         {isBlogPage ? (
-          <RouterNavItem to="/">Contact</RouterNavItem>
+          <RouterNavItem to="/" onClick={handleNavToSection('contact')}>Contact</RouterNavItem>
         ) : (
           <NavItem
             activeClass="active"
