@@ -134,7 +134,7 @@ const Blog = () => {
       title: 'Favorite Tools for Content Creation',
       date: 'May 28, 2025',
       content: `From Photoshop and Illustrator to DAWs and video editors, I rely on a suite of tools to bring ideas to life. I love experimenting with new software and sharing tips with others in the creative community.`
-    }
+    },
     {
       title: 'How I Got Started in Digital Marketing',
       date: 'July 1, 2025',
