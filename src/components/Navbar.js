@@ -118,6 +118,15 @@ const Navbar = () => {
         </NavItem>
         <NavItem
           activeClass="active"
+          to="blog"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Blog
+        </NavItem>
+        <NavItem
+          activeClass="active"
           to="contact"
           spy={true}
           smooth={true}
