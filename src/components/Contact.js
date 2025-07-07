@@ -80,7 +80,7 @@ const Contact = () => {
         >
           <FaLinkedin />
         </IconLink>
-        <IconLink href="mailto:andrewsungwoochoi@gmail.com" textColor="#eeeeee">
+        <IconLink href="mailto:andrewchoi@wayne.edu" textColor="#eeeeee">
           <FaEnvelope />
         </IconLink>
       </IconContainer>
