@@ -81,7 +81,8 @@ const Paragraph = styled.p`
 
 const BlogPostsWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 32px;
   justify-content: center;
   margin-top: 40px;
@@ -92,12 +93,23 @@ const BlogCard = styled.div`
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   padding: 24px 20px;
-  max-width: 350px;
+  width: 50%;
+  max-width: 600px;
   min-width: 280px;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+
+  @media (max-width: 900px) {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 0;
+  }
 `;
 
 const CardTitle = styled.h2`
