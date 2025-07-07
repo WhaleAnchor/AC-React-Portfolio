@@ -98,7 +98,7 @@ const Navbar = () => {
         >
           <FaHome />
         </NavItem>
-        <NavItem
+        {/* <NavItem
           activeClass="active"
           to="about"
           spy={true}
@@ -106,7 +106,7 @@ const Navbar = () => {
           duration={500}
         >
           About
-        </NavItem>
+        </NavItem> */}
         <NavItem
           activeClass="active"
           to="blog"

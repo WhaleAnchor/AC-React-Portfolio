@@ -21,9 +21,9 @@ function App() {
       <Element name="home">
         <Intro />
       </Element>
-      <Element name="about">
+      {/* <Element name="about">
         <About />
-      </Element>
+      </Element> */}
       <Element name="blog">
         <Blog />
       </Element>
