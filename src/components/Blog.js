@@ -134,7 +134,7 @@ const Blog = () => {
       date: 'June 29, 2025',
       content: `This past week, I volunteered at a church youth camp and a VBS (Vacation Bible School) program. While it was so awesome to be part of something bigger than myself, I found it challenging to balance my time between volunteering and my internship at ThermoVerse.
       I learned that it's important to set boundaries and prioritize tasks to maintain a healthy work-life balance. At ThermoVerse, I find myself struggling to adapt to the fast-paced environment, but I am trying my best to keep up with the demands of the job while also making time for personal commitments.
-      `
+      I've been meaning to take the Google Analytics Test for Digital Summer Clinic! I took half of the test before I got a network error and lost my progress. I need to find time to retake it and complete the certification. :(`
     },
     {
       title: 'Favorite Tools for Content Creation',
