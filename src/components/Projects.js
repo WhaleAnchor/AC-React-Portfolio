@@ -28,6 +28,7 @@ const ProjectsContainer = styled.div`
 const CarouselWrapper = styled.div`
   position: relative;
   width: 90%;
+  padding-bottom: 48px; /* Add space for dots inside container */
 `;
 
 const StyledCarousel = styled(CarouselBase)`
@@ -35,6 +36,15 @@ const StyledCarousel = styled(CarouselBase)`
 
   .carousel .slide {
     background-color: transparent;
+  }
+
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
   }
 
   .control-arrow {
