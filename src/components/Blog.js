@@ -135,6 +135,21 @@ const Blog = () => {
       date: 'May 28, 2025',
       content: `From Photoshop and Illustrator to DAWs and video editors, I rely on a suite of tools to bring ideas to life. I love experimenting with new software and sharing tips with others in the creative community.`
     }
+    {
+      title: 'How I Got Started in Digital Marketing',
+      date: 'July 1, 2025',
+      content: `My journey into digital marketing began with a curiosity for how brands connect with audiences online. I started by learning SEO and social media strategies, then expanded into analytics and content creation. Each project taught me the importance of adaptability and creativity.`
+    },
+    {
+      title: 'Balancing Music and Tech: My Creative Workflow',
+      date: 'June 15, 2025',
+      content: `As a musician and developer, I find inspiration in both code and composition. My workflow involves setting clear goals, using digital tools for both music and marketing, and always making time for creative exploration.`
+    },
+    {
+      title: 'Favorite Tools for Content Creation',
+      date: 'May 28, 2025',
+      content: `From Photoshop and Illustrator to DAWs and video editors, I rely on a suite of tools to bring ideas to life. I love experimenting with new software and sharing tips with others in the creative community.`
+    }
   ];
 
   return (
