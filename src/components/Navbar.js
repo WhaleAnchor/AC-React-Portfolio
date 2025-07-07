@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
 
 const NavbarContainer = styled.div`
@@ -22,7 +23,7 @@ const NavbarContainer = styled.div`
   }
 `;
 
-const NavItem = styled(Link)`
+const NavItem = styled(ScrollLink)`
   display:flex;
   align-items:center;
   color: #eeeeee;
@@ -41,6 +42,24 @@ const NavItem = styled(Link)`
   }
 `;
 
+const RouterNavItem = styled(RouterLink)`
+  display:flex;
+  align-items:center;
+  color: #eeeeee;
+  text-decoration: none;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 30px;
+
+  &:hover {
+    color: #00adb5;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+`;
 
 const PhaserBeam = styled.div`
   position: fixed;
@@ -62,10 +81,9 @@ const PhaserBeam = styled.div`
   }
 `;
 
-
-
 const Navbar = () => {
   const [phaserWidth, setPhaserWidth] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,55 +103,71 @@ const Navbar = () => {
     };
   }, []);
 
+  const isBlogPage = location.pathname === '/blog';
+
   return (
     <>
       <PhaserBeam width={phaserWidth} navbarHeight={65} />
       <NavbarContainer>
-        <NavItem
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FaHome />
-        </NavItem>
-        {/* <NavItem
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          About
-        </NavItem> */}
-        <NavItem
-          activeClass="active"
-          to="blog"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Blog
-        </NavItem>
-        <NavItem
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Projects
-        </NavItem>
-        <NavItem
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Contact
-        </NavItem>
+        {isBlogPage ? (
+          <RouterNavItem to="/">
+            <FaHome />
+          </RouterNavItem>
+        ) : (
+          <NavItem
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <FaHome />
+          </NavItem>
+        )}
+        {isBlogPage ? (
+          <RouterNavItem to="/">About</RouterNavItem>
+        ) : (
+          <NavItem
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            About
+          </NavItem>
+        )}
+        {isBlogPage ? (
+          <RouterNavItem to="/blog">Blog</RouterNavItem>
+        ) : (
+          <RouterNavItem to="/blog">Blog</RouterNavItem>
+        )}
+        {isBlogPage ? (
+          <RouterNavItem to="/">Projects</RouterNavItem>
+        ) : (
+          <NavItem
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Projects
+          </NavItem>
+        )}
+        {isBlogPage ? (
+          <RouterNavItem to="/">Contact</RouterNavItem>
+        ) : (
+          <NavItem
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Contact
+          </NavItem>
+        )}
       </NavbarContainer>
     </>
   );
