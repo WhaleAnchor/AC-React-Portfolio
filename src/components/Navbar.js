@@ -120,6 +120,13 @@ const Navbar = () => {
     }
   };
 
+  const handleBlogClick = (e) => {
+    if (!isBlogPage) {
+      // On home, scroll to top before navigating to blog
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  };
+
   return (
     <>
       <PhaserBeam width={phaserWidth} navbarHeight={65} />
@@ -155,7 +162,7 @@ const Navbar = () => {
         {isBlogPage ? (
           <RouterNavItem to="/blog">Blog</RouterNavItem>
         ) : (
-          <RouterNavItem to="/blog">Blog</RouterNavItem>
+          <RouterNavItem to="/blog" onClick={handleBlogClick}>Blog</RouterNavItem>
         )}
         {isBlogPage ? (
           <RouterNavItem to="/" onClick={handleNavToSection('projects')}>Projects</RouterNavItem>
