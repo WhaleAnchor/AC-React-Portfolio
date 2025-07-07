@@ -52,6 +52,8 @@ const ContentWrapper = styled.div`
 const TextWrapper = styled.div`
   flex: 1;
   text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
 `;
 
 const Paragraph = styled.p`
@@ -128,24 +130,11 @@ const Blog = () => {
       On another note, I am very thankful to be working with Oliver, another intern at Digital Summer Clinic. He is a great person to work with and we have been collaborating on various projects. I can't wait to see where this goes!`
     },
     {
-      title: 'Balancing Music and Tech: My Creative Workflow',
+      title: 'Balancing Life and Work',
       date: 'June 29, 2025',
-      content: `As a musician and developer, I find inspiration in both code and composition. My workflow involves setting clear goals, using digital tools for both music and marketing, and always making time for creative exploration.`
-    },
-    {
-      title: 'Favorite Tools for Content Creation',
-      date: 'May 28, 2025',
-      content: `From Photoshop and Illustrator to DAWs and video editors, I rely on a suite of tools to bring ideas to life. I love experimenting with new software and sharing tips with others in the creative community.`
-    },
-    {
-      title: 'How I Got Started in Digital Marketing',
-      date: 'July 1, 2025',
-      content: `My journey into digital marketing began with a curiosity for how brands connect with audiences online. I started by learning SEO and social media strategies, then expanded into analytics and content creation. Each project taught me the importance of adaptability and creativity.`
-    },
-    {
-      title: 'Balancing Music and Tech: My Creative Workflow',
-      date: 'June 15, 2025',
-      content: `As a musician and developer, I find inspiration in both code and composition. My workflow involves setting clear goals, using digital tools for both music and marketing, and always making time for creative exploration.`
+      content: `This past week, I volunteered at a church youth camp and a VBS (Vacation Bible School) program. While it was so awesome to be part of something bigger than myself, I found it challenging to balance my time between volunteering and my internship at ThermoVerse.
+      I learned that it's important to set boundaries and prioritize tasks to maintain a healthy work-life balance. At ThermoVerse, I find myself struggling to adapt to the fast-paced environment, but I am trying my best to keep up with the demands of the job while also making time for personal commitments.
+      `
     },
     {
       title: 'Favorite Tools for Content Creation',
