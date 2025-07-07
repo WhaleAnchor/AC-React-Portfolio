@@ -21,11 +21,11 @@ function App() {
       <Element name="home">
         <Intro />
       </Element>
-      <Element name="blog">
-        <Blog />
-      </Element>
       <Element name="about">
         <About />
+      </Element>
+      <Element name="blog">
+        <Blog />
       </Element>
       <Element name="projects">
         <Projects />

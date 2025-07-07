@@ -109,21 +109,21 @@ const Navbar = () => {
         </NavItem>
         <NavItem
           activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Projects
-        </NavItem>
-        <NavItem
-          activeClass="active"
           to="blog"
           spy={true}
           smooth={true}
           duration={500}
         >
           Blog
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Projects
         </NavItem>
         <NavItem
           activeClass="active"
