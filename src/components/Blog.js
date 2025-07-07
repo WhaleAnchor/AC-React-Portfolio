@@ -123,11 +123,11 @@ const CardContent = styled.p`
 const Blog = () => {
   const blogPosts = [
     {
-      title: 'My First Few Weeks at ThermoVerse',
-      date: 'June 22, 2025',
-      content: `I started my internship at Digital Summer Clinic with Ann Arbor SPARK on June 8 and I was placed with ThermoVerse, a tech start-up that works on innovative solutions for building energy efficiency.
-      My first few weeks have been a whirlwind of learning and adapting to the fast-paced environment. I was not used to the scrappy, bootstrapping style of working in a company. I think it will take a while to get used to this! 
-      On another note, I am very thankful to be working with Oliver, another intern at Digital Summer Clinic. He is a great person to work with and we have been collaborating on various projects. I can't wait to see where this goes!`
+      title: 'Mid Internship Reflections',
+      date: 'July 6, 2025',
+      content: `It's halfway into the internship and I feel like I have done far less than I expected. I feel regret for not being able to contribute more to the team and the projects, but I am trying to regain my focus for the final stretch of the internship. 
+      It feels quite discouraging to be met with unexpected obstacles! I won't let this get me down, though. I am determined to make the most of the remaining weeks and leave a positive impact on the team and the projects I am involved in!
+      I have been working on a few projects, including a marketing campaign for ThermoVerse as well as redesigning their website to improve user engagement.`
     },
     {
       title: 'Balancing Life and Work',
@@ -137,11 +137,11 @@ const Blog = () => {
       I've been meaning to take the Google Analytics Test for Digital Summer Clinic! I took half of the test before I got a network error and lost my progress. I need to find time to retake it and complete the certification. :(`
     },
     {
-      title: 'Mid Internship Reflections',
-      date: 'July 6, 2025',
-      content: `It's halfway into the internship and I feel like I have done far less than I expected. I feel regret for not being able to contribute more to the team and the projects, but I am trying to regain my focus for the final stretch of the internship. 
-      It feels quite discouraging to be met with unexpected obstacles! I won't let this get me down, though. I am determined to make the most of the remaining weeks and leave a positive impact on the team and the projects I am involved in!
-      I have been working on a few projects, including a marketing campaign for ThermoVerse as well as redesigning their website to improve user engagement.`
+      title: 'My First Few Weeks at ThermoVerse',
+      date: 'June 22, 2025',
+      content: `I started my internship at Digital Summer Clinic with Ann Arbor SPARK on June 8 and I was placed with ThermoVerse, a tech start-up that works on innovative solutions for building energy efficiency.
+      My first few weeks have been a whirlwind of learning and adapting to the fast-paced environment. I was not used to the scrappy, bootstrapping style of working in a company. I think it will take a while to get used to this! 
+      On another note, I am very thankful to be working with Oliver, another intern at Digital Summer Clinic. He is a great person to work with and we have been collaborating on various projects. I can't wait to see where this goes!`
     }
   ];
 
