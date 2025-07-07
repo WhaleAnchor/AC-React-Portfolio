@@ -173,7 +173,8 @@ const Blog = () => {
         </ImageWrapper>
         <TextWrapper>
           <Paragraph>
-           Hello, I'm senior at Wayne State University, pursuing a degree in Marketing - Digital Marketing and Analytics I'm also a musician, music instructor, and music producer. My passion for creating extends beyond coding to audio engineering, video production and editing, photo editing, and graphic design using Photoshop and Illustrator. I value collaboration and adjust my approach to align with project needs. My technical skills combined with creative talents enable me to deliver unique solutions for diverse client needs. I'm eager to learn and take on new challenges.
+            Welcome to my blog! Here, I share my insights and experiences in digital marketing, web development, and my current internship at Digital Summer Clinic and ThermoVerse. 
+            I hope you find inspiration and useful information in my posts.
           </Paragraph>
         </TextWrapper>
       </ContentWrapper>
