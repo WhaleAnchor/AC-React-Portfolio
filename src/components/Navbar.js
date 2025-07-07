@@ -160,11 +160,6 @@ const Navbar = () => {
           </NavItem>
         )}
         {isBlogPage ? (
-          <RouterNavItem to="/blog">Blog</RouterNavItem>
-        ) : (
-          <RouterNavItem to="/blog" onClick={handleBlogClick}>Blog</RouterNavItem>
-        )}
-        {isBlogPage ? (
           <RouterNavItem to="/" onClick={handleNavToSection('projects')}>Projects</RouterNavItem>
         ) : (
           <NavItem
@@ -189,6 +184,11 @@ const Navbar = () => {
           >
             Contact
           </NavItem>
+        )}
+        {isBlogPage ? (
+          <RouterNavItem to="/blog">Blog</RouterNavItem>
+        ) : (
+          <RouterNavItem to="/blog" onClick={handleBlogClick}>Blog</RouterNavItem>
         )}
       </NavbarContainer>
     </>
