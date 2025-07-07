@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
@@ -14,18 +15,14 @@ const AppContainer = styled.div`
   font-family: Arial, sans-serif;
 `;
 
-function App() {
+function Home() {
   return (
-    <AppContainer>
-      <Navbar />
+    <>
       <Element name="home">
         <Intro />
       </Element>
-      {/* <Element name="about">
+      <Element name="about">
         <About />
-      </Element> */}
-      <Element name="blog">
-        <Blog />
       </Element>
       <Element name="projects">
         <Projects />
@@ -33,7 +30,21 @@ function App() {
       <Element name="contact">
         <Contact />
       </Element>
-    </AppContainer>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContainer>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </AppContainer>
+    </Router>
   );
 }
 
