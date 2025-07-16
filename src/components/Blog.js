@@ -123,6 +123,12 @@ const CardContent = styled.p`
 const Blog = () => {
   const blogPosts = [
     {
+      title: 'Week 6',
+      date: 'July 15, 2025',
+      content: `I'm slowly adapting to the fast-paced environment at ThermoVerse. Furthermore, I think I am beginning to understand Shantonio's (ThermoVerse's CEO) work style. Previously, I found it difficult when I would show my work that met the requirements, but he would ask for more changes or would suggest a different direction. I realize now that he was looking for a more collaborative, creative process rather than just a final product. I wish I could go 
+      back and tell myself to be more open to feedback and to embrace the iterative process of design and development. With this new understanding, I feel more confident in my ability to contribute to the team and to the projects I am working on.`
+    },
+    {
       title: 'Mid Internship Reflections',
       date: 'July 6, 2025',
       content: `It's halfway into the internship and I feel like I have done far less than I expected. I feel regret for not being able to contribute more to the team and the projects, but I am trying to regain my focus for the final stretch of the internship. 
